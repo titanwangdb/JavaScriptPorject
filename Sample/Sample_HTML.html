@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- 中文编码 -->
+        <meta charset="UTF-8">
+        <title>this is title</title>
+        <!-- 此刻不显示图片：
+        <img border="0" src="/i/tulip_ballade.jpg" alt="Tulip">
+        -->
+        <link rel="stylesheet" type="text/css" href="/statics/demosource/styles.css"> 
+
+        <script>document.createElement("myHero")</script>
+        <style>
+            myHero {
+                display: block;
+                background-color: #ddd;
+                padding: 50px;
+                font-size: 30px;
+            } 
+        </style> 
+    </head>
+    
+    <body>
+        <h1 style="color:blue;text-align:center">this is h1</h1>
+        <h2 style="background-color:rgb(255,255,0)">this is h2</h2>
+        <h3 style="background-color:#FFFF00">this is h3</h3>
+        <h4 style="background-color:yellow">this is h3</h4>
+        <h5>this is h4</h5> <h6>this is h5</h6>
+        <hr>
+        
+        <h2>p</h2>
+        <p style="color:green">我是第一个段落</p>
+        <p>这是另外一个段落。</p>
+        <hr>
+
+        <h2>链接（Links）</h2>
+        <p> a标签，anchor（锚点）元素，既可以用来链接到外部地址实现页面跳转功能，也可以链接到当前页面的某部分实现内部导航功能。<br>
+            <a href="http://www.w3cschool.cn">这是一个链接</a> <br>
+            <a href="https://www.w3cschool.cn"> text </a> 跳转
+        </p>
+        <p> 图像链接 </p>
+        <a href="http://www.w3cschool.cn/"><img src="../Resource/w-brand.png" alt="图像链接"></a> 
+        <a href="mailto:webmaster@example.com">发送e-mail</a>
+        <a id="tips"></a>
+        <a href="#tips">跳到提示部分</a>
+        <hr>
+
+        <h2>button 标签:设置按钮</h2>
+        <button type="button" onclick="alert('Hello world!')">Click Me!</button>
+        <hr>
+
+        <h2>img</h2>
+        src 属性指向一个图片的具体地址<br>
+        <img src="https://angular.cn/assets/images/logos/angular/angular.svg" alt="The Picture crash" width="104" height="142"><br>
+        <img src="../Resource/w-brand.png" alt="The Picture crash">
+        <hr>
+
+        <h2>使用 div 元素的网页布局</h2>
+        <div id="container" style="width:800px">
+            <div id="header" style="background-color:#FFA500;">
+            <h1 style="margin-bottom:0;">Main Title of Web Page</h1></div>
+            
+            <div id="menu" style="background-color:#FFD700;height:200px;width:100px;float:left;">
+                <b>Menu</b><br>
+                HTML<br>
+                CSS<br>
+                JavaScript</div>
+            
+            <div id="content" style="background-color:#EEEEEE;height:200px;width:700px;float:left;">
+            Content goes here</div>
+            
+            <div id="footer" style="background-color:#FFA500;clear:both;text-align:center;">
+            Copyright © w3cschool.cn</div>
+        </div>
+        <hr>
+
+        <h2>iframe 框架</h2>
+        <iframe src="https://www.w3cschool.cn" name="name" height="200" width="250" frameborder="0">
+            <p>您的浏览器不支持  iframe 标签。</p>
+        </iframe>
+
+        <p><b>注意：</b> 因为 a 标签的 target 属性是名为 iframe_a 的 iframe 框架，所以在点击链接时页面会显示在 iframe框架中。</p>
+        <iframe src="/statics/demosource/demo_iframe.htm" name="iframe_a"></iframe>
+        <p><a href="https://www.w3cschool.cn" target="iframe_a">W3CSCHOOL.CN</a></p>
+        <hr>
+
+        <h2>使用 table 元素的网页布局(不建议)</h2>
+        <table width="500" border="0">
+            <tr>
+            <td colspan="2" style="background-color:#FFA500;">
+            <h1>Main Title of Web Page</h1>
+            </td>
+            </tr>
+            
+            <tr>
+            <td style="background-color:#FFD700;width:100px;">
+            <b>Menu</b><br>
+            HTML<br>
+            CSS<br>
+            JavaScript
+            </td>
+            <td style="background-color:#eeeeee;height:200px;width:400px;">
+            Content goes here</td>
+            </tr>
+            
+            <tr>
+            <td colspan="2" style="background-color:#FFA500;text-align:center;">
+            Copyright  © w3cschool.cn</td>
+            </tr>
+        </table>
+        <hr>
+
+        <h2>datalist 标签:需要与 "input" 标签配合使用，用来表示可选的列表</h2>
+        <input list="browsers" name="browser">
+            <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+        <input type="submit" value="submit">
+        <hr>
+
+        <h2>form 标签:向服务器传输数据</h2>
+        <p>点击"提交"按钮，表单数据将被发送到服务器上的“demo-form.php”。</p>
+        <form action="/statics/demosource/demo-form.php" method="post">
+            First name: <input type="text" name="FirstName" value="Mickey"><br>
+            Last name: <input type="text" name="LastName" value="Mouse"><br>
+            <input type="submit" value="提交">
+        </form>
+        <hr>
+
+        <h2>表单</h2>
+        <form>
+            First name: <input type="text" name="firstname"><br>
+            Last name: <input type="text" name="lastname">
+        </form> 
+        <form>
+            Password: <input type="password" name="pwd">
+        </form> 
+        <p>单选按钮（Radio Buttons）</p>
+        <form>
+            <input type="radio" name="sex" value="male">Male<br>
+            <input type="radio" name="sex" value="female">Female
+        </form> 
+        <p>复选框（Checkboxes）</p>
+        <form>
+            <input type="checkbox" name="vehicle" value="Bike">I have a bike<br>
+            <input type="checkbox" name="vehicle" value="Car">I have a car 
+        </form> 
+        <p>提交按钮(Submit Button)</p>
+        <form name="input" action="html_form_action.php" method="get">
+            Username: <input type="text" name="user">
+            <input type="submit" value="Submit">
+        </form>
+        <p>文本域(Textarea)</p> 
+        <textarea rows="10" cols="30">
+            我是一个文本框。
+        </textarea>
+        <p>预选下拉列表</p>
+        <form action="">
+            <select name="cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat" selected>Fiat</option>
+                <option value="audi">Audi</option>
+            </select>
+        </form>
+        <hr>
+
+        <h2>legend 标签:用来组合表单的相关元素</h2>
+        <form>
+            <fieldset>
+                <legend>个人信息:</legend>
+                姓名: <input type="text"><br>
+                邮箱: <input type="text"><br>
+                生日: <input type="text">
+            </fieldset>
+        </form>
+        <hr>
+
+        <h2>nav 标签表示一个页面中的某个部分，目的是提供导航链接，常见的导航栏的示例是菜单、目录和索引</h2>
+        <nav>
+            <a href="/html/">HTML</a> |
+            <a href="/css/">CSS</a> |
+            <a href="/javascript/">Javascript</a> |
+            <a href="/jquery/">jQuery</a>
+        </nav>
+        <hr>
+
+        <h2>script 标签通常放置在 head 标签内，用于链接外部 JavaScript 文件的外部资源标签</h2>
+        <script>
+            document.write("Hello World!")
+        </script>
+        <br>
+        <p>JavaScript事件响应</p>
+        <p id="demo">
+            JavaScript can react to events. Like the click of a button.
+        </p>
+        <script>
+            function myFunction()
+            {
+                document.getElementById("demo").innerHTML="Hello JavaScript!";
+            }
+        </script>
+        <button type="button" onclick="myFunction()">Change HTML</button>
+        <p>JavaScript处理 HTML 样式</p>
+        <script>
+            function myFunction2()
+            {
+                x=document.getElementById("demo") // 找到元素
+                x.style.color="#ff0000";          // 改变样式
+            }
+        </script>
+        <button type="button" onclick="myFunction2()">Change Style</button>
+        <hr>
+
+        <h2>option 标签可以表示 HTML 文档中弹出窗口中的菜单项和其他项目列表</h2>
+        <select>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+        </select>
+        <hr>
+
+        <h2>output 标签显示计算或用户操作的结果</h2>
+        <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+            <input type="range" id="a" value="50">100
+            +<input type="number" id="b" value="50">
+            =<output name="x" for="a b"></output>
+        </form>
+        <hr>
+        
+        <h2>li 标签:列表</h2>
+        <p>有序列表:</p>
+        <ol>
+            <li>咖啡</li>
+            <li>茶</li>
+            <li>牛奶</li>
+        </ol>
+        <p>无序列表:</p>
+        <ul>
+            <li>咖啡</li>
+            <li>茶</li>
+            <li>牛奶</li>
+        </ul>
+        <hr>
+
+        <h2>dd 标签:描述元素</h2>
+        <dl>
+            <dt>Coffee</dt>
+                <dd>Black hot drink</dd>
+            <dt>Milk</dt>
+                <dd>White cold drink</dd>
+        </dl> 
+        <hr>
+
+        <h2>音频 视频</h2>
+        <audio controls>
+            <source src="../Resource/Five Hundred Miles.mp3" >
+        </audio><br>
+        <video width="450" height="200" controls>
+            <source src="../Resource/19061003_8992.mp4" type="video/mp4">
+            <!-- video/ogg  video/webm -->>
+        </video>
+        <p>使用 DOM 进行控制</p>
+        <div style="text-align:center"> 
+            <button onclick="playPause()">播放/暂停</button> 
+            <button onclick="makeBig()">放大</button>
+            <button onclick="makeSmall()">缩小</button>
+            <button onclick="makeNormal()">普通</button>
+            <br> 
+            <video id="video1" width="450">
+                <source src="../Resource/19061003_8992.mp4" type="video/mp4">
+            </video>
+        </div> 
+            
+        <script> 
+            var myVideo=document.getElementById("video1"); 
+            
+            function playPause()
+            { 
+                if (myVideo.paused) 
+                    myVideo.play(); 
+                else 
+                    myVideo.pause(); 
+            } 
+
+            function makeBig()
+            { 
+                myVideo.width=500; 
+            } 
+            
+            function makeSmall()
+            { 
+                myVideo.width=200; 
+            } 
+            
+            function makeNormal()
+            { 
+                myVideo.width=300; 
+            } 
+        </script> 
+        <hr>
+
+        <h2>一列:</h2>
+        <table border="1">
+            <tr>
+                <td>100</td>
+            </tr>
+        </table>
+
+        <h2>一行三列:</h2>
+        <table border="1">
+            <tr>
+                <td>100</td>
+                <td>200</td>
+                <td>300</td>
+            </tr>
+        </table>
+
+        <h2>两行三列:</h2>
+        <table border="1">
+            <tr>
+                <td>100</td>
+                <td>200</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>400</td>
+                <td>500</td>
+                <td>600</td>
+            </tr>
+        </table>
+        <hr>
+
+        <h2>div 标签:标记区域 例如样式化 (使用 class 或 id 属性)</h2>
+        <div style="color:#0000FF">
+            <h3>这是一个在 div 元素中的标题。</h3>
+            <p>这是一个在 div 元素中的文本。</p>
+        </div>
+        <hr>
+
+        <h2>span 元素是无语义的行内元素，它可以对元素进行分组，使它们以不同的样式显示</h2>
+        <p>
+            我的母亲有 <span style="color:blue;font-weight:bold">蓝色</span> 的眼睛，
+            我得父亲有 <span style="color:darkolivegreen;font-weight:bold">碧绿色</span> 的眼睛。
+        </p>
+        <hr>
+
+        <h2>为 HTML 添加新元素</h2>
+        <myHero>我的第一个新元素</myHero>
+        <hr>
+
+        <h2>canvas 标签是一个画布标签，只是作为一个图形容器，必须使用脚本来绘制图形</h2>
+        <canvas id="myCanvas">你的浏览器不支持 HTML5 canvas 标签。</canvas>
+        <script>
+            var c=document.getElementById('myCanvas');
+            var ctx=c.getContext('2d');
+            ctx.fillStyle='#FF0000';
+            ctx.fillRect(100,0,80,100);
+        </script>
+        <hr>
+
+        <h2>文本格式化 Formatting</h2>
+        <p>
+            <b>粗体标记要强调的文本</b><br>
+            <del>删除的文本</del> <ins>red</ins>!<br>
+            <em>强调文本</em><br>
+            <strong>加粗文本</strong><br>
+            <dfn>定义项目</dfn><br>
+            <code>一段电脑代码</code><br>
+            <samp>计算机样本</samp><br>
+            <kbd>键盘输入</kbd><br>
+            <var>变量</var><br>
+            <sub> （下标文本）<br>
+            <sup> （上标文本）<br>
+            <i>斜体</i><br>
+            The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.(缩写形)<br>
+            <p>address 标签:定义地址、签名或者文档的作者身份</p>
+            <address>
+                Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br> 
+                Visit us at:<br>
+                Example.com<br>
+                Box 564, Disneyland<br>
+                USA
+            </address>
+        </p>  
+        <hr>
+    </body>
+</html>

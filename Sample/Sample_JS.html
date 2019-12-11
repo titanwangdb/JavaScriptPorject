@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>W3Cschool在线教程(w3cschool.cn)</title> 
+		<style>
+			h2{
+				text-align: center
+			}
+		</style>
+		<script>
+			/* 使用 document.write() 方法将内容写到 HTML 文档中。 */
+			document.write("<h2>this is title h2.</h2>")
+		</script>
+		<script src="../JS/Sample.js"></script>
+	</head>
+
+	<body>
+
+		<h1>我的第一个 JavaScript 程序</h1>
+		<p id="demo">这是一个段落</p>
+		<button type="button" onclick="displayDate()">显示日期</button>
+		<hr>
+
+		<h2>对事件的反应</h2>
+		<!-- onclick 事件 -->
+		<button type="button" onclick="alert('Welcome to My World!')">Welcome</button><br>
+		<button type="button" onclick="changeContent()">ChangeContent</button>
+		<hr>
+
+		<h2>改变图像</h2>
+		<p>click image will change image</p>
+		<img id="myimage" src="../Resource/1495798487624763.jpg" alt="image not found" 
+			onclick="changeImage()" width="300" height="200">
+		<hr>
+
+		<h2>验证输入</h2>
+		<input id="checkValues" type="text">
+		<button type="button" onclick="checkValue()">Check</button>
+		<hr>
+
+		<h2>带有返回值的函数</h2>
+		<div id="returnFunction"></div>		
+		<script>
+			document.getElementById("returnFunction").innerHTML = returnFun(10,20);
+		</script>
+		<hr>
+
+		<h2>数据类型</h2>
+		<script>
+			var x;                      // x 为 undefined
+			document.writeln("The x: " + typeof x + "<br>");
+			var length = 16;            // Number 通过数字字面量赋值
+			var length = 3.1415926;     // Number 
+			var y=123e5;                // 12300000
+			var z=123e-5;               // 0.00123
+			var points = x * 10;        // Number 通过表达式字面量赋值
+			var lastName = "Johnson";   // String 通过字符串字面量赋值
+			document.writeln("Len is: " + lastName.length + "<br>"); // 字符串长度
+			var x=true;
+			var y=false;
+			var cars = ["Saab", "Volvo", "BMW"];                // Array  通过数组字面量赋值
+			var cars = new Array("Saab","Volvo","BMW");         // Array
+			var cars = new Array();                             // Array
+			cars[0]="Saab";
+			cars[1]="Volvo";
+			cars[2]="BMW";
+			var person = {firstName:"John", lastName:"Doe"};  // Object 通过对象字面量赋值
+			var person={
+				firstname : "John",
+				lastname  : "Doe",
+				id        :  5566
+			};
+		</script>
+		<hr>
+
+		<h2>Date</h2>
+		<div id="clock" style="text-align: center"></div>
+		<script>
+			DateTest();
+			clock();
+		</script>
+		<hr>
+
+		<h2>TryCatchThrow</h2>
+		<p>please input range 1~5:</p>
+		<input type="text" name="1~5" id="TryCatchThrow">
+		<button type="button" onclick="tryCatch()">Try</button>
+		<p id="message"></p>
+		<hr>
+		
+	</body>
+</html>

@@ -1,0 +1,5 @@
+HTML 指超文本标签语言 Hypertext Markup Language 。 是一种用来结构化 Web 网页及其内容的标记语言，标准通用标记语言下的一个应用，
+您可以使用 HTML 来建立自己的 WEB 站点。
+HTML 是通向 WEB 技术世界的钥匙。
+
+HTML5 是下一代 HTML 标准。设计目的是为了在移动设备上支持多媒体。
